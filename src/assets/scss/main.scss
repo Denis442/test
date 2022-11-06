@@ -1,0 +1,69 @@
+@import './utils/vars.scss';
+@import './utils/reset.scss';
+@import './components/header.scss';
+@import './components/form.scss';
+@import './components/input.scss';
+@import './components/button.scss';
+@import './components/about.scss';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+    line-height: $mainLineHeight;
+    font-size: $mainFontSize;
+    height: 100%;
+    @media screen and (max-width: $desktopWidth) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: $tableWidth) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      font-size: 14px;
+    }
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+    background-color: $primary-color;
+    color: $default-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: $lgDesktopWidth;
+    @media screen and (max-width: $lgDesktopWidth) {
+      
+      max-width: $smDesktopWidth;
+    }
+    @media screen and (max-width: $smDesktopWidth) {
+      max-width: $tableWidth;
+
+    }
+    @media screen and (max-width: $tableWidth) {
+      width: $smTableWidth;
+
+     
+    }
+    @media screen and (max-width: $smTableWidth) {
+      width: $phoneWidth;
+    }
+    @media screen and (max-width: $phoneWidth) {
+      width: $smPhoneWidth;
+    }
+
+}

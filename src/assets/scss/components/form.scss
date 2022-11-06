@@ -1,0 +1,96 @@
+.wrapper{
+    width: 100%;
+    margin-top: 100px;
+    flex-direction: column;
+    @media screen and (max-width: $smDesktopWidth) {
+        margin-top: 40px;
+      }
+}
+
+.title{
+    width: 760px;
+    @media screen and (max-width: $tableWidth) {
+       width: 580px;
+      }
+    @media screen and (max-width: $smTableWidth) {
+        width: 220px;
+      }
+}
+
+
+.title-text{
+    line-height: $mainLineHeight;
+    color:$g-999;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.form-flex{
+    display:  flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @media screen and (max-width: $smDesktopWidth) {
+        flex-direction: column;
+      }
+    
+}
+
+.form-flex-title{
+    position: relative;
+    display:  flex;
+    justify-content: space-between;
+    color: #000;
+    margin-bottom: 40px;
+    @media screen and (max-width: $smDesktopWidth) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    @media screen and (max-width: $tableWidth) {
+        p{
+            font-size:15px;
+        }
+        .price{
+            font-size: 30px;
+        }
+       .Sum_form{
+        width: 220px;
+        height: 60px;
+
+       }
+       .month_price{
+        width: 220px;
+        height: 60px;
+       }
+      }
+
+    @media screen and (max-width: $phoneWidth    ) {
+      justify-content: flex-start;
+      .Sum_form{
+        width: 280px;
+        height: 60px;
+        margin-top: 15px;
+       }
+       .month_price{
+        width: 230px;
+        height: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       }
+      }
+}
+
+.Sum_form{
+    width: 280px;
+    height: 80px;
+}
+
+.price{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.month_price{
+    width: 260px;
+    height: 80px;
+
+}

@@ -1,0 +1,69 @@
+.btn_disabled{
+    width: 425px;
+    height: 68px;
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: rgba(255, 149, 20, 0.4);
+    border-radius: 40px;
+    cursor: pointer;
+    @media screen and (max-width: $lgDesktopWidth) { 
+      width: 320px;
+      }
+    @media screen and (max-width: $smDesktopWidth) {
+        width: 345px;
+        margin: 40px auto;
+      }
+    @media screen and (max-width: $tableWidth) {
+        max-width:  280px;
+    }
+  }
+  
+  
+  .btn_form{
+      width: 425px;
+      height: 68px;
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 30px;
+      background: #FF9514;
+      border-radius: 40px;
+      cursor: pointer;
+      @media screen and (max-width: $lgDesktopWidth) {
+          width: 320px;
+        }
+      @media screen and (max-width: $smDesktopWidth) {
+        
+          width: 345px;
+          margin: 40px auto;
+        }
+      @media screen and (max-width: $tableWidth) {
+          max-width:  280px;
+        }
+  }
+  
+  .btn_form:hover{
+      background: #0a0602;
+     }
+  
+  .loader{
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: an1 1s ease infinite;
+  
+    @keyframes an1 {
+      0% {
+        transform: rotate(0turn);
+      }
+  
+      100%{
+        transform: rotate(1turn);
+      }
+    }
+  
+  }
